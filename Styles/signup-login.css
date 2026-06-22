@@ -1,0 +1,142 @@
+/* signup-login.css */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(22, 22, 22);
+    padding: 20px;
+}
+
+.login-signup-parent{
+    border: 2px solid rgb(6, 202, 33);
+    box-shadow: 4px 4px 12px rgb(6, 202, 33);
+    padding: 20px 40px;
+    background-color: transparent;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 420px;
+    transition: 0.3s;
+}
+
+.login-signup-parent:hover{
+    transform: scale(1.02);
+}
+
+.head{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 17px;
+    color: #fff;
+}
+
+.label{
+    color: rgb(182,182,182);
+    margin-bottom: 3px;
+}
+
+input{
+    width: 100%;
+    padding: 8px 0px 8px 12px;
+    outline: 0;
+    border: 1px solid rgb(6, 202, 33);
+    border-radius: 10px;
+    font-size: 17px;
+    margin-bottom: 12px;
+    background-color: transparent;
+    color: rgb(231, 227, 227);
+}
+
+a{
+    text-decoration: none;
+}
+
+i{
+    margin-right: 5px;
+}
+
+input:focus{
+    box-shadow: 2px 2px 10px rgb(6, 202, 33);
+}
+
+.login-signup-change{
+    color: #fff;
+    margin-top: 8px;
+    text-align: center;
+}
+
+#signup-or-login{
+    text-decoration: none;
+    color: rgb(6, 202, 33);
+}
+
+.back-to-home{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.home-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid rgb(6, 202, 33);
+    padding: 0px 15px;
+    border-radius: 5px;
+    background-color: rgb(6, 202, 33);
+    color: #fff;
+    font-size: 18px;
+    height: 40px;
+    transition: 0.3s;
+}
+
+.home-button:hover {
+    background-color: rgb(9, 228, 38);
+    transform: scale(1.05);
+}
+
+.login-signup-button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.login-signup-button-container button{
+    padding: 5px 25px;
+    cursor: pointer;
+    border: 1px solid rgb(6, 202, 33);
+    border-radius: 5px;
+    background-color: rgb(6, 202, 33);
+    color: #fff;
+    font-size: 18px;
+    height: 40px;
+    transition: 0.3s;
+}
+
+.login-signup-button-container button:hover{
+    background-color: rgb(9, 228, 38);
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px){
+    .login-signup-parent{
+        width: 95%;
+        padding: 20px;
+    }
+
+    .head{
+        font-size: 22px;
+    }
+
+    input{
+        font-size: 15px;
+    }
+}
